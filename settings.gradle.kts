@@ -5,8 +5,8 @@ pluginManagement {
     }
 
     plugins {
-        kotlin("jvm").version(extra["kotlin.version"] as String)
-        id("org.jetbrains.compose").version(extra["compose.version"] as String)
+        kotlin("jvm").version("1.9.20")
+        id("org.jetbrains.compose").version("1.5.10")
     }
 }
 
