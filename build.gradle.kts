@@ -30,7 +30,9 @@ compose.desktop {
 
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
-            packageName = "db601aa"
+            copyright = "Copyright 2023 dev-alphagot."
+            vendor = "dev-alphagot"
+            packageName = "IAAMC"
             packageVersion = "1.0.0"
         }
     }

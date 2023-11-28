@@ -1,3 +1,5 @@
+import java.text.Normalizer
+
 fun parseUnicodeEscape(s: String): String {
     val sBuffer = StringBuilder()
 
@@ -37,5 +39,5 @@ fun parseUnicodeEscape(s: String): String {
         sBuffer.append(uniBuffer.toBigInteger().toByteArray().decodeToString())
     }
 
-    return sBuffer.toString().replace(0.toChar().toString(), "")
+    return Normalizer.normalize(sBuffer.toString().replace(0.toChar().toString(), ""), Normalizer.Form.NFC)
 }
